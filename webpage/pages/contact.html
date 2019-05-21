@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- Wieso kann der IE 7 meine Typekit Schriftart darstellen, der IE 8 aber nicht? :D-->
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Lightshot Productions - Kontakt</title>
+
+	<meta name="author" content="krause">
+	<meta name="date" content="2019-05-06">
+
+
+	<meta name="description" content="">
+	<meta name="keywords" content="Schlüsselwörter für Suchmaschinen, maybe Video, Film, Hochzeit, etc.">
+	<link rel="stylesheet" href="portfolio.css" type="text/css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://use.typekit.net/czu1axh.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<h1 style="color: #d0b7a1">Jetzt anfragen lalala</h1>
+	<!-- Das sieht irgendwie nicht aus wie meine default Schriftart??-->
+
+	<section class="mb-4">
+		<p class="text-center w-responsive mx-auto mb-5" style="font-size: 2em;">Sende uns jetzt eine ganz tolle
+			Anfrage!</p>
+
+		<div class="row flexbox" style="display: flex; justify-content: center;">
+
+			<div class="col-md-9 mb-md-0 mb-5">
+				<form class="contact-form" action="/pages/contactform.php" method="POST">
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="md-form mb-0">
+								<input type="text" name="name" class="form-control" placeholder="Dein Name">
+								<label for="name">Dein Name</label>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="md-form mb-0">
+								<input type="text" name="email" class="form-control" placeholder="Deine Mail-Adresse">
+								<label for="email" class="">Deine Mail-Adresse</label>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="md-form mb-0">
+								<div class="form-group">
+									<select class="form-control" name="subject">
+
+										<option selected>Bitte wähle Dein Anliegen aus...</option>
+										<!--dieser Text soll als default angezeigt werden, aber nicht als Option auswählbar sein -->
+
+										<option>Hochzeit</option>
+										<option>Social Media Content</option>
+										<option>Musikvideo-Produktion</option>
+										<option>Sonstige Kategorie</option>
+
+										<!-- wie handelt man überhaupt die Übergabe dieses select Dings in php?
+										Ich find das halt cool, aber krieg es wahrscheinlich nicht hin. -->
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-12">
+
+							<div class="md-form">
+								<textarea type="text" id="message" name="message" rows="2"
+									class="form-control md-textarea" placeholder="Deine Nachricht"></textarea>
+								<label for="message">Deine Nachricht an uns</label>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-light navbar-btn" style="background-color: #d0b7a1" type="submit"
+						name="submit">SENDEN</button>
+				</form>
+
+			</div>
+
+		</div>
+
+		</div>
+
+	</section>
+
+	<ul class="navbar-nav">
+		<a href="../index.html" class="btn btn-light navbar-btn"
+			style="background-color: #d0b7a1; font-style: italic; color: black;">
+			bacc to le start</a>
+	</ul>
+
+
+
+</body>
+
+</html>

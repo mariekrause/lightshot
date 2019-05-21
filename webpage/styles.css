@@ -1,0 +1,41 @@
+* {
+  font-family: "Menco";
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #fbf8f6;
+}
+#hero .background {
+  background-image: url("images/blumen.jpg");
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 40vmin;
+  position: relative;
+}
+#hero .herotext {
+  position: absolute;
+  background-image: url("images/logo-alt.png");
+  width: 100vw;
+  height: 40vmin;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* .link {                          CSS Variante (Anfrage-Button transition bei hover)
+  transition: height 3s;
+  height: 40px;
+}
+
+.link:hover {
+  background-color: white; 
+   Warum macht das meinen Button beim Hovern nicht weiß? Angesprochen ist es richtig (das hab ich probiert)
+  height: 500px;
+  transition: height 3s; 
+} */

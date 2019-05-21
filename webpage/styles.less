@@ -1,0 +1,35 @@
+@maincolor: #d0b7a1;
+
+* {
+	font-family: "Menco";
+	font-weight: 500;
+	font-style: normal;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: lighten(@maincolor, 25%);
+}
+
+#hero {
+	.background { 
+    background-image: url("images/blumen.jpg");
+    background-position: center 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 40vmin;
+    position: relative;
+  }
+  .herotext {
+    position: absolute;
+    background-image: url("images/logo-alt.png");
+    width: 100vw;
+    height: 40vmin;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

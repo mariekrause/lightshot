@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	font-family: "Menco";
+	font-weight: 500;
+	font-style: normal;
+	background-color: #ffffff;
+}
+
+#header {
+	width: 100%;
+	position: absolute;
+	border-bottom: 10px solid #d0b7a1;
+	
+}
+
+nav {
+	margin-top: 30px;
+	
+}
+#text_header {
+	background: transparent;
+	position: relative;
+	align-content: center;
+	width: 90%;
+	display: block;
+	margin: auto;
+	opacity: 0.8;
+}
