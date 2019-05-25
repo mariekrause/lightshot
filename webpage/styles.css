@@ -28,14 +28,40 @@ body {
   background-position: center center;
 }
 
-/* .link {                          CSS Variante (Anfrage-Button transition bei hover)
-  transition: height 3s;
-  height: 40px;
-}
+.textbox {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #d0b7a1;
+ }
 
-.link:hover {
-  background-color: white; 
-   Warum macht das meinen Button beim Hovern nicht weiß? Angesprochen ist es richtig (das hab ich probiert)
-  height: 500px;
-  transition: height 3s; 
-} */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px; }
+
+    .speech-bubble {
+      position: relative;
+      right: 250px;
+      background: #a1a7d0;
+      border-radius: .8em;
+    }
+    
+    .speech-bubble:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border: 25px solid transparent;
+      border-left-color: #a1a7d0;
+      border-right: 0;
+      border-bottom: 0;
+      margin-top: 0px;
+      margin-right: -20px;
+    }
+
+    #bubble {
+      font-size: 30px;
+    }

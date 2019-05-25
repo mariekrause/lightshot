@@ -14,9 +14,18 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" type="text/css">
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function hide_bubble() {
+      document.getElementById("bubble").style.display = "none";
+    }
+  </script>
 </head>
 
-<body>
+<body onload="hide_bubble()">
 
   <div id="hero">
     <div class="background"></div>
@@ -38,7 +47,7 @@
       </ul>
     </div>
     <ul class="navbar-nav navbar-right">
-      <a href="pages/contact.html" class="btn btn-light navbar-btn" id="link" onmouseover="groesser()"
+      <a href="pages/contact.html" class="btn btn-light navbar-btn" id="link"
         style="background-color: rgba(255,255,255,0.2)">
         Jetzt unverbindlich für Euer Event anfragen!</a>
     </ul>
@@ -55,60 +64,94 @@
           <p>Egal ob Familienfeier, Musikvideo oder neue Fotos für Dein Social Media Profil - mit Lightshot Productions
             steht Eurem maßgeschneiderten, perfekten Video- und Foto-Content nichts mehr im Weg! <br>
           </p>
-          <p style="font-style: italic; font-size: 22px;">Mit unserem Herz, Verstand und dem passenden Know-How wird
+          <p style="font-style: italic; font-size: 22px;">Mit unserem Herz, Verstand und unserem passenden Know-How wird
             Euer perfekter Moment unvergesslich.</p>
-          <p style="background-color: #d0b7a1">Schaut Euch gern auch auf unserer INSTAGRAM-Seite um!</p>
+          <p style="background-color: #d0b7a1">Schaut Euch gern auch auf unserer <a
+              href="instagram.com/lightshot.production" target="_blank" style="color:#fbf8f6;">INSTAGRAM-Seite</a> um!
+          </p>
         </blockquote>
       </div>
       <div class="col-md-6 p-0" style="align-self: flex-end">
         <img class="img-fluid" src="images/wedding.jpg" alt="Wedding">
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-6 p-0">
-        <img class="img-fluid" id="bottom" src="images/gras.jpg" alt="Wedding">
+        <div class="textbox">
+          <img class="img-fluid" id="bottom" src="images/gras.jpg" alt="Wedding">
+          <div class="bottom-right">
+            <h3 class="speech-bubble" id="bubble" style="padding: 20px;">Kein Problem!</h3>
+            <p id="fragen" style="background-color: #d0b7a1; font-size: 30px; padding-left: 10px; padding-right: 10px;">
+              Noch Fragen?</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h2>Ich habe Hunger</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-          ut
-          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-          ut
-          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+      <script>
+        $("#fragen").mouseenter(function () {
+          $("#bubble").css("display", "inline");
+          console.log("HALLELUJAH");
+        });
+
+        $("#fragen").mouseleave(function () {
+          $("#bubble").css("display", "none");
+          console.log("HALLELUJAH pt2");
+        });
+      </script>
+
+      <div class="col-md-6" style="align-self: center">
+        <blockquote class="blockquote">
+          <h2>Willkommen bei Lightshot Production!</h2>
+          <p>Wir sind Laura und Marie - Euer Film- und Fototeam aus Mannheim. Wenn Du mehr über uns erfahren möchtest,
+            schau doch
+            bei "Das sind Wir!" vorbei!</p>
+          <hr>
+          <p style="margin-top: 10px; font-style: italic; font-size: 22px;">Unser Motto? Teamwork makes the dream work!
+          </p>
+          <p>Wir glauben fest daran, dass vier Augen immer mehr sehen als zwei - und zwei Kameras mehr sehen als eine.
+            Deshalb gibt es uns immer im Doppelpack - so können wir das Beste aus Eurem Event herausholen.</p>
+          <div class="text-center" style="background-color: #d0b7a1; padding: 10px;">
+            <a style="font-size: 22px;" href="pages/about_us.html" class="btn btn-block btn-light navbar-btn"
+              style="display: block; background-color: rgba(255,255,255,0.2)">
+              Das sind Wir!</a> </div>
+          <hr>
+          <p style="color:#fbf8f6; background-color: #d0b7a1;"> Kein Problem, wir sind für Euch da! Wir freuen uns auf
+            Eure Anfragen über unser <a style=" color: black; margin-top: 50px;"
+              href="pages/contact.html">Kontaktformular
+            </a>!</p>
+        </blockquote>
       </div>
     </div>
+    <!-- <div class="row">
+              <div class="col-6 offset-3">
+                -<img class="img-fluid" src="images/lightshotlogo.png" alt="Slogan">
+              </div>
+      </div>
+    </div>-->
+
+
     <div class="row">
-      <div class="col-6 offset-3">
-        <img class="img-fluid" src="images/lightshotlogo.png" alt="Slogan">
-      </div>
+      <footer class="container-fluid" style="color: #fbf8f6; background-color: #d0b7a1; display: block;">
+        <nav>
+          <div class="row" style=>
+            <div class="col-md-3"> <a href="pages/portfolio.html">Unser Portfolio</a> </div>
+            <div class="col-md-3"> <a href="pages/about_us.html">Das sind wir!</a> </div>
+            <div class="col-md-3"> <a href="pages/contact.html">Kontakt</a> </div>
+            <div class="col-md-3"> <a href="pages/impressum.html">Impressum</a> </div>
+          </div>
+        </nav>
+      </footer>
     </div>
-  </div>
 
-  <div class="text-center">
-    <button class="btn btn-primary"> Jetzt unverbindlich für Euer Event anfragen! </button>
-  </div>
-  <nav>
-    <div class="row unten">
-      <div class="col-md-3"> <a href="#">Start</a> </div>
-      <div class="col-md-3"> <a href="/pages/portfolio.html">Unser Portfolio</a> </div>
-      <div class="col-md-3"> <a href="#">Das sind wir!</a> </div>
-      <div class="col-md-3"> <a href="#">Kontakt und Impressum</a> </div>
-    </div>
-  </nav>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
