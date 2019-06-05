@@ -22,10 +22,16 @@
     <script src="../script.js"></script>
 
     <script>
-        function hide_datenschutz() {
-            document.getElementById("datenschutz").style.display = "none";
+        function start() {
+            function hide_datenschutz() {
+                document.getElementById("datenschutz").style.display = "none";
+            }
+            function hide_agb() {
+                document.getElementById("agb").style.display = "none";
+            }
         }
     </script>
+
     <style>
         .visible {
             display: block !important;
@@ -36,10 +42,13 @@
 
 </head>
 
-<body onload="hide_datenschutz()">
+<body onload="start()">
+
 
     <header>
-        <img id="header" src="../images/header_blumen_klein.jpg" alt="Beispielheader">
+        <img id="header" style="position: relative;" src="../images/header_blumen_klein.jpg" alt="Beispielheader">
+        <img style="position: absolute;" src="../images/lightshot_newlogo.png" alt="Lightshot new logo" width="50%">
+
 
     </header>
 
@@ -80,8 +89,149 @@
 
     <div class="container-fluid" style="max-width: 80%">
         <div class="row">
-            <h2 id="datenschutz_headline" onclick="show_hide ()"
-                style="background-color: #d0b7a1; color: #fff; padding: 5px;">&equiv;
+            <h2 onclick="show_hide2()" style="background-color: #d0b7a1; color: #fff; padding: 5px;">
+                &equiv; Unsere Allgemeinen Geschäftsbedingungen</h2>
+
+        </div>
+    </div>
+    <hr>
+    <div id="agb" class="container-fluid" style="max-width: 80%">
+        <p><strong>Allgemeine Geschäftsbedingungen</strong></p>
+        I Geltung und Geschäftsbedingungen
+        1. Die nachfolgenden allgemeinen Liefer- und Geschäftsbedingungen (im folgenden AGB genannt) gelten für alle vom
+        Videografen durchgeführten Aufträge, Angebote, Lieferungen und Leistungen.
+        2. Sie gelten als vereinbart mit Entgegennahme der Lieferung oder Leistung bzw. des Angebots des Videografen
+        durch den Kunden, spätestens jedoch mit der Annahme des Bildmaterials zur Veröffentlichung.
+        3. Wenn der Kunde den AGB widersprechen will, ist dieses schriftlich binnen drei Werktagen zu erklären.
+        Abweichenden Geschäftsbedingungen des Kunden wird hiermit widersprochen. Abweichende Geschäftsbedingungen des
+        Kunden erlangen keine Gültigkeit, es sei denn, dass der Videograf diese schriftlich anerkennt.
+        4. Die AGB gelten im Rahmen einer laufenden Geschäftsbeziehung auch ohne ausdrückliche Einbeziehung auch für
+        alle zukünftigen Aufträge, Angebote, Lieferungen und Leistungen des Videografen, sofern nicht ausdrücklich
+        abweichende Regelungen getroffen werden.
+        II. Auftragsproduktionen
+        1. Soweit der Videograf Kostenvoranschläge erstellt, sind diese unverbindlich. Treten während der Produktion
+        Kostenerhöhungen ein, sind diese erst dann vom Videografen anzuzeigen, wenn erkennbar wird, dass hierdurch eine
+        Überschreitung der ursprünglich veranschlagten Gesamtkosten um mehr als 15 % zu erwarten ist. Wird die
+        vorgesehene Produktionszeit aus Gründen überschritten, die der Fotograf nicht zu vertreten hat, so ist eine
+        zusätzliche Vergütung auf der Grundlage des vereinbarten Zeithonorars bzw. in Form einer angemessenen Erhöhung
+        des Pauschalhonorars zu leisten.
+        2. Der Fotograf ist berechtigt, Leistungen von Dritten, die zur Durchführung der Produktion eingekauft werden
+        müssen, im Namen und mit Vollmacht sowie für Rechnung des Kunden in Auftrag zu geben.
+        3. Vorbehaltlich einer anderweitigen Regelung werden die Aufnahmen, die dem Kunden nach Abschluss der Produktion
+        zur Abnahme vorgelegt werden, durch den Fotografen ausgewählt.
+        4. Sind dem Videografen innerhalb von zwei Wochen nach Ablieferung der Aufnahmen keine schriftlichen Mängelrügen
+        zugegangen, gelten die Aufnahmen als vertragsgemäß und mängelfrei abgenommen.
+        III. Überlassenes Bildmaterial (analog und digital)
+        1. Die AGB gelten für jegliches dem Kunden überlassenes Bildmaterial, gleich in welcher Schaffensstufe oder in
+        welcher technischen Form sie vorliegen. Sie gelten insbesondere auch für elektronisches oder digital
+        übermitteltes Bildmaterial.
+        2. Der Kunde erkennt an, dass es sich bei dem vom Videografen gelieferten Videomaterial um urheberrechtlich
+        geschützte Lichtbildwerke i.S.v. § 2 Abs.1 Ziff.5 Urheberrechtsgesetze handelt.
+        3. Vom Kunden in Auftrag gegebene Gestaltungsvorschläge oder Konzeptionen sind eigenständige Leistungen, die zu
+        vergüten sind.
+        4. Das überlassene Bildmaterial bleibt Eigentum des Videografen, und zwar auch in dem Fall, dass Schadensersatz
+        hierfür geleistet wird.
+        5. Der Kunde hat das Bildmaterial sorgfältig und pfleglich zu behandeln und darf es an Dritte nur zu
+        geschäftsinternen Zwecken der Sichtung, Auswahl und technischen Verarbeitung weitergeben.
+        6. Reklamationen, die den Inhalt der gelieferten Sendung oder Inhalt, Qualität oder Zustand des Bildmaterials
+        betreffen, sind innerhalb von zwei Wochen nach Empfang mitzuteilen. Anderenfalls gilt das Bildmaterial als
+        ordnungsgemäß, vertragsgemäß und wie verzeichnet zugegangen.
+        IV. Nutzungsrechte
+        1. Der Kunde erwirbt grundsätzlich nur ein einfaches Nutzungsrecht zur einmaligen Verwendung. Veröffentlichungen
+        im Internet oder die Einstellung in digitale Datenbanken sind vorbehaltlich anderweitiger Vereinbarungen
+        zeitlich begrenzt auf die Dauer der Veröffentlichungszeiträume des entsprechenden bzw. eines vergleichbaren
+        Printobjektes.
+        2. Ausschließliche Nutzungsrechte, medienbezogene oder räumliche Exklusivrechte oder Sperrfristen müssen
+        gesondert vereinbart werden und bedingen einen Aufschlag von mindestens 100% auf das jeweilige Grundhonorar.
+        3. Mit der Lieferung wird lediglich das Nutzungsrecht übertragen für die einmalige Nutzung des Videomaterials zu
+        dem vom Kunden angegebenen Zweck und in der Publikation und in dem Medium oder Datenträger, welche/-s/-n der
+        Kunde angegeben hat oder welche/-s/-r sich aus den Umständen der Auftragserteilung ergibt. Im Zweifelsfall ist
+        maßgeblich der Nutzungszweck, für den das Bildmaterial ausweislich des Lieferscheins oder der Versandadresse zur
+        Verfügung gestellt worden ist.
+        4. Jede über Ziffer 3. hinausgehende Nutzung, Verwertung, Vervielfältigung, Verbreitung oder Veröffentlichung
+        ist honorarpflichtig und bedarf der vorherigen ausdrücklichen Zustimmung des Videografen. Das gilt insbesondere
+        für:
+        - eine Zweitverwertung oder Zweitveröffentlichung, insbesondere in Sammelbänden, produktbegleitenden Prospekten,
+        bei Werbemaßnahmen oder bei sonstigen Nachdrucken, jegliche Bearbeitung, Änderung oder Umgestaltung des
+        Bildmaterials,
+        - die Digitalisierung, Speicherung oder Duplizierung des Videomaterials auf Datenträgern aller Art (z.B.
+        magnetische, optische, magnetooptische oder elektronische Trägermedien wie CD-ROM, DVD, Festplatten,
+        Arbeitsspeicher, Mikrofilm etc.), soweit dieses nicht nur der technischen Verarbeitung und Verwaltung des
+        Videomaterials gem. Ziff.III 5. AGB dient,
+        - jegliche Vervielfältigung oder Nutzung der Videodaten auf digitalen Datenträgern, jegliche Aufnahme oder
+        Wiedergabe der Videodaten im Internet oder in Online- Datenbanken oder in anderen elektronischen Archiven (auch
+        soweit es sich um interne elektronische Archive des Kunden handelt),
+        - die Weitergabe des digitalisierten Videomaterials im Wege der Datenfernübertragung oder auf Datenträgern, die
+        zur öffentlichen Wiedergabe auf Bildschirmen oder zur Herstellung von Hardcopys geeignet sind.
+        5. Veränderungen des Bildmaterials durch Video-Composing, Montage oder durch elektronische Hilfsmittel zur
+        Erstellung eines neuen urheberrechtlich geschützten Werkes sind nur nach vorheriger schriftlicher Zustimmung des
+        Videografen und nur bei Kennzeichnung mit [M] gestattet. Auch darf das Videomaterial nicht aufgezeichnet,
+        nachgestellt gefilmt oder anderweitig als Motiv benutzt werden.
+        6. Der Kunde ist nicht berechtigt, die ihm eingeräumten Nutzungsrechte ganz oder teilweise auf Dritte, auch
+        nicht auf andere Konzern- oder Tochterunternehmen, zu übertragen. Jegliche Nutzung, Wiedergabe oder Weitergabe
+        des Videomaterials ist nur gestattet unter der Voraussetzung der Anbringung des vom Videografen vorgegebenen
+        Urhebervermerks in zweifelsfreier Zuordnung zum jeweiligen Bild- oder Film.
+        7. Die Einräumung der Nutzungsrechte steht unter der aufschiebenden Bedingung der vollständigen Bezahlung
+        sämtlicher Zahlungsansprüche des Videografen aus dem jeweiligen Vertragsverhältnis.
+        8. Mit der Auftragserteilung erklärt sich der Auftraggeber damit einverstanden, dass das entstandene Foto- und
+        Videomaterial vom Auftragnehmer uneingeschränkt zur Eigenwerbung im Internet (Eigene Webseite, Soziale Netzwerke
+        usw.) und in Printmedien o. ä. verwendet werden kann.
+        V. Haftung
+        1. Der Videograf übernimmt keine Haftung für die Verletzung von Rechten abgebildeter Personen oder Objekte, es
+        sei denn, es wird ein entsprechend unterzeichnetes Release-Formular beigefügt. Der Erwerb von Nutzungsrechten
+        über das foto- und videografische Urheberrecht hinaus, z. B. für abgebildete Werke der bildenden oder
+        angewandten Kunst sowie die Einholung von Veröffentlichungsgenehmigungen bei Sammlungen, Museen etc. obliegt dem
+        Kunden. Der Kunde trägt die Verantwortung für die Betextung sowie die sich aus der konkreten Veröffentlichung
+        ergebenden Sinnzusammenhänge.
+        2. Ab dem Zeitpunkt der ordnungsgemäßen Lieferung des Bild- und Videomaterials ist der Kunde für dessen
+        sachgemäße Verwendung verantwortlich.
+        3. Die Haftung gegenüber dem Auftraggeber wird auf den Ersatz von grob fahrlässig oder vorsätzlich verschuldeten
+        Schäden beschränkt.
+        VI. Honorare
+        1. Es gilt das vereinbarte Honorar. Ist kein Honorar vereinbart worden, bestimmt es sich nach der jeweils
+        aktuellen Bildhonorarübersicht der Mittelstandsgemeinschaft Foto- Marketing (MFM). Das Honorar versteht sich
+        zuzüglich der jeweils gültigen Mehrwertsteuer.
+        2. Mit dem vereinbarten Honorar wird die einmalige Nutzung des Bildmaterials zu dem vereinbarten Zweck gemäß
+        Ziff. IV. 3 abgegolten.
+        3. Durch den Auftrag anfallende Kosten und Auslagen (z.B. Material- und Laborkosten, Modellhonorare, Kosten für
+        erforderliche Requisiten, Reisekosten, erforderliche Spesen etc.) sind nicht im Honorar enthalten und gehen zu
+        Lasten des Kunden.
+        4. Der Honoraranspruch ist bei Ablieferung der Aufnahme fällig. Wird eine Produktion in Teilen abgeliefert, so
+        ist das entsprechende Teilhonorar mit jeweiliger Lieferung fällig. Der Fotograf ist berechtigt, bei
+        Produktionsaufträgen Abschlagszahlungen entsprechend dem jeweils erbrachten Leistungsumfang zu verlangen.
+        5. Das Honorar gemäß VI. 1. AGB ist auch dann in voller Höhe zu zahlen, wenn das in Auftrag gegebene und
+        gelieferte Bildmaterial nicht veröffentlicht wird. Bei Verwendung der Aufnahmen als Arbeitsvorlage für Layout-
+        und Präsentationszwecke fällt vorbehaltlich einer abweichenden Vereinbarung ein Honorar von mindestens EURO
+        75,00 pro Aufnahme an.
+        6. Eine Aufrechnung oder die Ausübung des Zurückbehaltungsrechts ist nur mit unbestrittenen oder rechtskräftig
+        festgestellten Forderungen des Kunden zulässig. Zulässig ist außerdem die Aufrechnung mit bestrittenen aber
+        entscheidungsreifen Gegenforderungen.
+        VII. Vertragsstrafe, Schadensersatz
+        1. Bei jeglicher unberechtigten (ohne Zustimmung des Videografen erfolgten) Nutzung, Verwendung, Wiedergabe oder
+        Weitergabe des Bildmaterials ist für jeden Einzelfall eine Vertragsstrafe in Höhe des fünffachen
+        Nutzungshonorars zu zahlen, vorbehaltlich weitergehender Schadensersatzansprüche.
+        2. Bei unterlassenem, unvollständigem, falsch platziertem oder nicht zuordnungsfähigem Urhebervermerk ist ein
+        Aufschlag in Höhe von 100% auf das vereinbarte bzw. übliche Nutzungshonorar zu zahlen.
+        VIII. Allgemeines
+        1. Es gilt das Recht der Bundesrepublik Deutschland als vereinbart, und zwar auch bei Lieferungen ins Ausland.
+        2. Nebenabreden zum Vertrag oder zu diesen AGB bedürfen zu ihrer Wirksamkeit der Schriftform.
+        3. Die etwaige Nichtigkeit bzw. Unwirksamkeit einer oder mehrerer Bestimmungen dieser AGB berührt nicht die
+        Wirksamkeit der übrigen Bestimmungen. Die Parteien verpflichten sich, die ungültige Bestimmung durch eine
+        sinnentsprechende wirksame Bestimmung zu ersetzen, die der angestrebten Regelung wirtschaftlich und juristisch
+        am nächsten kommt.
+        4. Erfüllungsort und Gerichtsstand ist, wenn der Kunde Vollkaufmann ist, der Wohnsitz des Videografen.
+        <div class="row" style="max-width: 80%;">
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid" style="max-width: 80%">
+        <div class="row">
+            <h2 onclick="show_hide ()" style="background-color: #d0b7a1; color: #fff; padding: 5px;">&equiv;
                 Datenschutzerklärung</h2>
 
         </div>

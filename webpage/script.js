@@ -11,3 +11,8 @@ function show_hide() {
     document.getElementById("datenschutz").classList.toggle("visible")
 
 }
+
+function show_hide2() {
+    document.getElementById("agb").classList.toggle("visible")
+
+}
