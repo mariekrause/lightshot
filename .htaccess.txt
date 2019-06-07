@@ -1,1 +1,2 @@
-Redirect 301 /index.html /pages/underconstruction.html
+RewriteEngine On
+RewriteRule ^index\.html$ /pages/underconstruction.html [R=302,L]
