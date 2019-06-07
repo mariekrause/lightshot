@@ -1,0 +1,3 @@
+
+Redirect temp index.html /pages/underconstruction.html
+order deny,allow
