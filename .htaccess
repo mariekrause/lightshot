@@ -1,3 +1,2 @@
-
 RewriteEngine on
-Redirect 301 index.html /pages/underconstruction.html
+Redirect 302 index.html /webpage/pages/underconstruction.html
