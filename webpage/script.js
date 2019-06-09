@@ -7,7 +7,12 @@ function parallax() {
     $('.background').css('background-position-y', -(Math.abs(scrolled) * 0.025) + 'rem');
 };
 
-function groesser() {
-    document.getElementById("link").style.height = 500;
-    document.getElementById("link").style.width = 500;
+function show_hide() {
+    document.getElementById("datenschutz").classList.toggle("visible")
+
+}
+
+function show_hide2() {
+    document.getElementById("agb").classList.toggle("visible")
+
 }

@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)lightshotproduction.de/index.html$
+
+RewriteCond %{REQUEST_URI} !^/pages/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /pages/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?lightshotproduction.de$
+RewriteRule ^(/)?$ pages/underconstruction.html [L]
