@@ -20,7 +20,7 @@ body {
 }
 #hero .herotext {
   position: absolute;
-  background-image: url("images/lightshot_newlogo.png"); /* andere Logos funktionieren, liegt es an Datei?*/
+  background-image: url("images/lightshot_newlogo.png");
   width: 100vw;
   z-index: 2;
   height: 40vmin;
